@@ -20,7 +20,7 @@ src="https://www.facebook.com/tr?id=482675157669768&ev=PageView&noscript=1"
 <!-- End Meta Pixel Code -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THINK PLUS BD - Premium Digital Products</title>
+    <title>My Orders - THINK PLUS BD</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -103,95 +103,16 @@ src="https://www.facebook.com/tr?id=482675157669768&ev=PageView&noscript=1"
         </div>
     </div>
     <main>
-        <section id="homePage" class="page active">
-            <section class="banner">
-                <div class="banner-image-container">
-                    <div class="skeleton"></div>
-                    <picture>
-                        <source media="(max-width: 768px)" srcset="product_images/phnbanner.png">
-                        <source media="(min-width: 769px)" srcset="product_images/desktopbanner.png">
-                        <img src="product_images/desktop_banner.png" alt="Premium Digital Products and Services" class="image-fade-in" />
-                    </picture>
-                    <span class="image-placeholder-text" style="display:none;">Premium Digital Products and Services</span>
-                </div>
-            </section>
+        <section id="ordersPage" class="page container">
+            <h1 style="margin-bottom: 1.5rem;">My Orders</h1>
 
-            <div class="container">
-                 <h2 class="category-section-title">Product Categories</h2>
+            <div class="orders-container" id="ordersList">
+                <!-- Orders will be dynamically loaded here by script.js -->
+                <div id="noOrdersMsg" style="text-align: center; padding: 2rem; display: none;">
+                    <p>You have not placed any orders yet.</p>
+                    <a href="products.html" class="button-primary" style="text-decoration: none; background-color: #2a2a2a; color: white; padding: 10px 15px; border-radius: 5px; margin-top: 1rem; display: inline-block;">Browse Products</a>
+                </div>
             </div>
-            <section class="categories container">
-                <a href="products.html?category=course" class="category">
-                    <div class="category-icon-wrapper"><i class="fas fa-graduation-cap category-icon-fa" aria-hidden="true"></i></div>
-                    <p class="category-name">Course</p>
-                    <p class="category-subtitle" id="category-count-course">0 Premium Courses</p>
-                </a>
-                <a href="products.html?category=subscription" class="category">
-                    <div class="category-icon-wrapper"><i class="fas fa-key category-icon-fa" aria-hidden="true"></i></div>
-                    <p class="category-name">Subscription</p>
-                    <p class="category-subtitle" id="category-count-subscription">0 Premium Services</p>
-                </a>
-                <a href="products.html?category=software" class="category">
-                    <div class="category-icon-wrapper"><i class="fas fa-laptop-code category-icon-fa" aria-hidden="true"></i></div>
-                    <p class="category-name">Software</p>
-                    <p class="category-subtitle" id="category-count-software">0 Bundle Packages</p>
-                </a>
-                <a href="products.html?category=ebook" class="category">
-                    <div class="category-icon-wrapper"><i class="fas fa-book-open category-icon-fa" aria-hidden="true"></i></div>
-                    <p class="category-name">Ebook</p>
-                    <p class="category-subtitle" id="category-count-ebook">0 Digital Guides</p>
-                </a>
-            </section>
-
-            <section class="product-listings container">
-                <div class="featured-section-header">
-                    <h2 class="category-title">Courses</h2>
-                    <a class="view-all" href="products.html?category=course">View All <i class="fas fa-angle-double-right" style="font-size: 0.8em;"></i></a>
-                </div>
-                <div class="homepage-products-grid" id="featuredCoursesGrid"></div>
-
-                <div class="featured-section-header">
-                    <h2 class="category-title">Subscriptions</h2>
-                    <a class="view-all" href="products.html?category=subscription">View All <i class="fas fa-angle-double-right" style="font-size: 0.8em;"></i></a>
-                </div>
-                <div class="homepage-products-grid" id="popularSubscriptionsGrid"></div>
-
-                <div class="featured-section-header">
-                    <h2 class="category-title">Software</h2>
-                    <a class="view-all" href="products.html?category=software">View All <i class="fas fa-angle-double-right" style="font-size: 0.8em;"></i></a>
-                </div>
-                <div class="homepage-products-grid" id="topSoftwareGrid"></div>
-                <div class="featured-section-header">
-                    <h2 class="category-title">Ebooks</h2>
-                    <a class="view-all" href="products.html?category=ebook">View All <i class="fas fa-angle-double-right" style="font-size: 0.8em;"></i></a>
-                </div>
-                <div class="homepage-products-grid ebooks-grid" id="latestEbooksGrid"></div>
-            </section>
-
-            <section class="why-choose-us">
-                <h2 class="section-title">Why Choose Us</h2>
-                <div class="choose-us-grid container">
-                    <div class="benefit">
-                        <i class="fas fa-medal benefit-icon-fa" aria-hidden="true"></i>
-                        <h3>Premium Quality</h3>
-                        <p>Access good-quality digital products </p>
-                    </div>
-                    <div class="benefit">
-                        <i class="fas fa-headset benefit-icon-fa" aria-hidden="true"></i>
-                        <h3>Dedicated Support</h3>
-                        <p>Think plus bd is available for halp and queries.</p>
-                    </div>
-                    <div class="benefit">
-                        <i class="fas fa-tags benefit-icon-fa" aria-hidden="true"></i>
-                        <h3>Affordable Pricing</h3>
-                        <p>Get good-tier products at prices that fit with budget.</p>
-                    </div>
-                    <div class="benefit">
-                        <i class="fas fa-shield-alt benefit-icon-fa" aria-hidden="true"></i>
-                        <h3>Secure Payments</h3>
-                        <p>Multiple secure payment options, including Nagad and bKash.</p>
-                    </div>
-                </div>
-            </section>
         </section>
     </main>
     <footer class="footer" id="mainFooter">
@@ -220,13 +141,13 @@ src="https://www.facebook.com/tr?id=482675157669768&ev=PageView&noscript=1"
     </footer>
 
     <div class="bottom-nav" id="bottomNav">
-        <a href="index.html" class="bottom-nav-item active" data-page="home">
+        <a href="index.html" class="bottom-nav-item" data-page="home">
             <i class="fas fa-home" aria-hidden="true"></i> <span>Home</span>
         </a>
         <a href="products.html" class="bottom-nav-item" data-page="products">
             <i class="fas fa-store" aria-hidden="true"></i> <span>Products</span>
         </a>
-        <a href="orders.html" class="bottom-nav-item" data-page="orders">
+        <a href="orders.html" class="bottom-nav-item active" data-page="orders">
             <span style="position:relative; display:inline-block;">
                 <i class="fas fa-box-open" aria-hidden="true"></i>
                 <div class="bottom-nav-orders-notification" id="bottomNavOrdersNotification">!</div>
@@ -253,7 +174,7 @@ src="https://www.facebook.com/tr?id=482675157669768&ev=PageView&noscript=1"
         <div class="fab-help-text">Need Help?</div>
     </div>
 
-    <div id="cartModal" class="cart-modal"> 
+    <div id="cartModal" class="cart-modal">
         <div class="cart-content">
             <span class="close" id="cartClose" aria-label="Close cart modal"><i class="fas fa-times" aria-hidden="true"></i></span>
             <h2>Your Cart</h2>
